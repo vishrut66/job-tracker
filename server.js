@@ -39,7 +39,7 @@ app.use(mongoSanitize());
 
 // only when ready to deploy
 
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // app.get('/', (req, res) => {
 //     res.json({ msg: 'welcome from the server' })
